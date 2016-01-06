@@ -89,7 +89,7 @@
                     <hr class="light">
                     <p class="text-faded">Hello, my name is Jim!
                         <br> I'm an a second year undergraduate student studying Electrical Engineering and Computer Science (EECS) at University of California, Berkeley.</p>
-                    <a href="https://www.dropbox.com/s/3zj5g0iykv9a651/Xinhe_Ren_Resume.pdf?dl=0" class="btn btn-default btn-xl">RÉsumÉ</a>
+                    <a target="_blank" href="https://www.dropbox.com/s/3zj5g0iykv9a651/Xinhe_Ren_Resume.pdf?dl=0" class="btn btn-default btn-xl">RÉsumÉ</a>
                 </div>
             </div>
         </div>
@@ -276,13 +276,15 @@
     </div>    
 
     <script>
+        window.onload = function() {
         // Elevator script included on the page, already.
-        var elementButton = document.querySelector('.elevator');
-        var elevator = new Elevator({
-            element: elementButton,
-            mainAudio: './music/elevator.mp3', // Music from http://www.bensound.com/
-            endAudio:  './music/ding.mp3'
-        });
+            var elementButton = document.querySelector('.elevator');
+            var elevator = new Elevator({
+                element: elementButton,
+                mainAudio: './music/elevator.mp3', // Music from http://www.bensound.com/
+                endAudio:  './music/ding.mp3'
+            });
+        }
     </script>
 
     <!-- jQuery -->
